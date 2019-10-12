@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,7 +86,7 @@
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="一米八三">
 <meta property="og:description" content="JavaScript,Vue,React,NodeJs,微信小程序,Go">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一米八三">
 <meta name="twitter:description" content="JavaScript,Vue,React,NodeJs,微信小程序,Go">
@@ -97,7 +97,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -105,7 +105,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -137,7 +137,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -186,7 +186,27 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
-            Home
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
           </a>
         </li>
       
@@ -196,7 +216,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
-            Archives
+            归档
           </a>
         </li>
       
@@ -233,12 +253,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/11/测试博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/11/Flutter相关简介及环境配置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Liu Yingxu">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/WechatIMG68.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -252,7 +272,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/10/11/测试博客/" itemprop="url">测试博客</a></h1>
+                <a class="post-title-link" href="/2019/10/11/Flutter相关简介及环境配置/" itemprop="url">Flutter相关简介及环境配置</a></h1>
         
 
         <div class="post-meta">
@@ -262,9 +282,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-11T19:57:45+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-11T19:57:45+08:00">
                 2019-10-11
               </time>
             
@@ -303,8 +323,7 @@
 
       
         
-          
-            <h2 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h2><ul>
+          <h2 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h2><ul>
 <li><p>18年2月份提出概念，</p>
 </li>
 <li><p>6月份上线正式使用 </p>
@@ -313,108 +332,13 @@
 <p>  <a href="https://book.flutterchina.club/" target="_blank" rel="noopener">Flutter中文网参考</a></p>
 </li>
 </ul>
-<h3 id="相关技术简介"><a href="#相关技术简介" class="headerlink" title="相关技术简介"></a>相关技术简介</h3><p><strong>原生开发简介</strong></p>
-<pre><code>iOS：Objective-C或Swift语言调用iOS SDK
-Android:Java或Kotlin语言直接调用Android SDK
-
-优势：可访问平台全部功能（GPS、摄像头）；
-    速度快、性能高、可以实现复杂动画及绘制，整体用户体验好；
-
-缺点：平台特定，开发成本高；不同平台必须维护不同代码，人力成本随之变大；
-    内容固定，动态化弱，大多数情况下，有新功能更新时只能发版；
-
-纯原生开发的问题：
-    动态化内容需求增大
-    业务需求变化快，开发成本变大</code></pre><p><strong>跨平台技术简介</strong></p>
-<pre><code>1、H5+原生（Cordova、Ionic、微信小程序）webview
-    通过原生的网页加载控件WebView (Android)或WKWebView（ios）来加载
-    我们称这种h5+原生的开发模式为混合开发 ，采用混合模式开发的APP我们称之为混合应用或Hybird APP ，
-    如果一个应用的大多数功能都是H5实现的话，我们称其为Web APP 。
-    WebView是JavaScript与原生API之间通信的桥梁，
-    传输协议的工具称之为WebView JavaScript Bridge, 简称 JsBridge（核心）
-
-2、JavaScript开发+原生渲染 （React Native、Weex、快应用）
-    采用Web开发技术栈，社区庞大、上手快、开发成本相对较低。
-    原生渲染，性能相比H5提高很多。
-    动态化较好，支持热更新。
-
-3、自绘UI+原生(QT for mobile、Flutter)
-    通过在不同平台实现一个统一接口的渲染引擎来绘制UI，而不依赖系统原生控件
-    所以可以做到不同平台UI的一致性，注意，自绘引擎解决的是UI的跨平台问题，
-    如果涉及其它系统能力调用，依然要涉及原生开发（调取摄像头等系统设备）
-
-具体跨平台技术介绍
-    Ionic：angelur常用的组件库（官网：ionicframework.com）
-    快应用：中国的Android手机厂商联合推出的类似于rn的技术
-    Weex：阿里的kpi项目（不维护了）vue开发
-    微信小程序：在webview中渲染的，并非原生渲染，但将来有可能原生渲染</code></pre><h3 id="flutter简介"><a href="#flutter简介" class="headerlink" title="flutter简介"></a>flutter简介</h3><p><strong>跨平台自绘引擎</strong></p>
-<pre><code>跨平台自会引擎，flutter与用于构建移动应用程序的大多数框架不同，因为flutter即不使用WebView，
-也不使用操作系统的原生控件，相反，flutter使用自己的高性能渲染引擎来绘制widget</code></pre><p><strong>高性能(JIT和AOT)</strong></p>
-<pre><code>AOT（Ahead of time）:静态编译的程序在执行前全部被翻译为机器码(提前编译)
-JIT（Just-in-time）:解释执行的则是一句一句边翻译边运行(即时编译)</code></pre><p><strong>为什么采用Dart开发</strong></p>
-<pre><code>1、开发效率高
-2、高性能
-3、快速内存分配
-4、类型安全
-5、Dart团队就在隔壁</code></pre><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>一、安装开发环境</p>
-<p>1、安装Flutter SDK（Mac）<br><a href="https://flutter.io/docs/development/tools/sdk/archive" target="_blank" rel="noopener">https://flutter.io/docs/development/tools/sdk/archive</a></p>
-<ul>
-<li>下载解压，压缩包放到应用程序里</li>
-<li>配置环境变量： ~/.bash_profile<br>添加：export PATH=$PATH:/Applications/flutter/bin</li>
-<li>执行 source ~/.bash_profile</li>
-<li>flutter –help</li>
-</ul>
-<p>2、配置iOS开发环境（Mac）</p>
-<ul>
-<li>安装xcode</li>
-<li>启动模拟器</li>
-<li>配置VS Code<br>安装 flutter扩展</li>
-</ul>
-<p>3、检测问题</p>
-<blockquote>
-<p>flutter doctor<br>问题1：Android license status unknown</p>
-</blockquote>
-<p>找到 sdk/tools/bin 下的sdkmanager.bat    %DEFAULT_JVM_OPTS%  后面添加 -XX:+IgnoreUnrecognizedVMOptions –add-modules java.se.ee</p>
-<p>flutter doctor –android-licenses<br>提示问题后升级：/usr/local/Cellar/android-sdk/tools/bin/sdkmanager –update<br>问题2：<br>? libimobiledevice and ideviceinstaller are not installed. To install with Brew, run:<br>brew update<br>brew install –HEAD usbmuxd<br>brew link usbmuxd<br>brew install –HEAD libimobiledevice<br>brew install ideviceinstaller<br>? ios-deploy not installed. To install with Brew:<br>brew install ios-deploy<br>? CocoaPods not installed.<br>CocoaPods is used to retrieve the iOS platform side’s plugin code that responds to your plugin usage on the Dart side.<br>Without resolving iOS dependencies with CocoaPods, plugins will not work on iOS.<br>For more info, see <a href="https://flutter.io/platform-plugins" target="_blank" rel="noopener">https://flutter.io/platform-plugins</a><br>To install:<br>brew install cocoapods<br>pod setup<br>问题3：<br>Android Studio (version 3.0)<br>? Flutter plugin not installed; this adds Flutter specific functionality.<br>? Dart plugin not installed; this adds Dart specific functionality.<br>打开android studio, configure &gt; plugins &gt; 搜索安装 dart, flutter</p>
-<p>二、创建项目<br>1、Using Flutter in China<br>export PUB_HOSTED_URL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a> export FLUTTER_STORAGE_BASE_URL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a><br>执行 source ~/.bash_profile<br>2、创建<br>flutter create gp7_flutter<br>3、运行flutter项目</p>
-<ul>
-<li>xcode里打开模拟器</li>
-<li>android studio 配置AVD</li>
-<li>flutter emulators</li>
-<li>flutter emulators –launch Nexus_6P_API_28</li>
-<li>flutter run</li>
-</ul>
-<p>三、快速入门<br>1、hello world<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(<br>Center(<br>child: Text(<br>‘hello world’,<br>textDirection: TextDirection.ltr<br>),<br>)<br>);<br>}</p>
-<p>2、自定义部件(widget)<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return Center(<br>child: Text(<br>‘hello world’,<br>textDirection: TextDirection.ltr<br>),<br>);<br>}<br>}</p>
-<p>3、文字样式<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return Center(<br>child: Text(<br>‘hello world’,<br>textDirection: TextDirection.ltr,<br>style: TextStyle(<br>fontSize: 40.0,<br>fontWeight: FontWeight.bold,<br>color: Colors.yellow<br>),<br>),<br>);<br>}<br>}</p>
-<p>4、MaterialApp界面组件<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return MaterialApp(<br>home: Scaffold(<br>appBar: AppBar(<br>title: Text(‘Felixlu’),<br>elevation: 0.0,<br>),<br>body: Hello()<br>),<br>theme: ThemeData(<br>primarySwatch: Colors.yellow<br>),<br>);<br>}<br>}<br>class Hello extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return Center(<br>child: Text(<br>‘hello’,<br>textDirection: TextDirection.ltr,<br>style: TextStyle(<br>fontSize: 40.0,<br>fontWeight: FontWeight.bold,<br>color: Colors.black87<br>),<br>),<br>);<br>}<br>}</p>
-<p>5、菜谱数据（model/list.dart）<br>class Cookbook {<br>const Cookbook({<br>this.name,<br>this.img,<br>this.all_click,<br>this.favorites<br>});</p>
-<p>final String name;<br>final String img;<br>final String all_click;<br>final String favorites;<br>}</p>
-<p>final List<cookbook> lists = [<br>Cookbook(<br>name: “\u5c0f\u7092\u725b\u8089”,<br>img: “http://s1.cdn.jiaonizuocai.com/videoImg/201510/1313/561c9a314c8bb.jpg/OTAweDYwMA”,<br>all_click: “961.2\u4e07”,<br>favorites: “6.0\u4e07”<br>),<br>……<br>];</cookbook></p>
-<p>6、列表视图<br>import ‘package:flutter/material.dart’;<br>import ‘model/cookbook.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return MaterialApp(<br>home: Home(),<br>theme: ThemeData(<br>primarySwatch: Colors.yellow<br>),<br>);<br>}<br>}</p>
-<p>class Home extends StatelessWidget {<br>Widget _listItemBuilder(BuildContext context, int index) {<br>return Text(lists[index].name);<br>}</p>
-<p>@override<br>Widget build(BuildContext context) {<br>return Scaffold(<br>appBar: AppBar(<br>title: Text(‘美食大全’),<br>elevation: 0.0,<br>),<br>body: ListView.builder(<br>itemCount: lists.length,<br>itemBuilder: _listItemBuilder<br>)<br>);<br>}<br>}</p>
-<p>7、列表项目<br>Widget _listItemBuilder(BuildContext context, int index) {<br>return Container(<br>color: Colors.white,<br>margin: EdgeInsets.all(8.0),<br>child: Column(<br>children: <widget>[<br>Image.network(lists[index].img),<br>SizedBox(height: 16.0),<br>Text(<br>lists[index].name,<br>style: Theme.of(context).textTheme.title<br>),<br>Text(<br>‘访问：’ + lists[index].all_click,<br>style: Theme.of(context).textTheme.subhead<br>),<br>Text(<br>‘收藏：’ + lists[index].favorites,<br>style: Theme.of(context).textTheme.subhead<br>),<br>SizedBox(height: 16.0)<br>],<br>),<br>);<br>}</widget></p>
-<p>参考：<br><a href="https://flutter.io/docs" target="_blank" rel="noopener">https://flutter.io/docs</a><br><a href="https://book.flutterchina.club/chapter1/install_flutter.html" target="_blank" rel="noopener">https://book.flutterchina.club/chapter1/install_flutter.html</a></p>
-<p><strong>Dart</strong><br>    两个编译模式 解释执行（JIT）、编译执行（AOT）<br>    final 定义的变量是不能更改的 （final String name）</p>
-<p><strong>图标</strong></p>
-<pre><code>Icon()
-
-Stack()
-
-PageView 可以做类似于swiper的布局
-
-GridView 网格布局</code></pre>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/11/Flutter相关简介及环境配置/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -466,7 +390,7 @@ GridView 网格布局</code></pre>
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Liu Yingxu">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/WechatIMG68.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -490,9 +414,9 @@ GridView 网格布局</code></pre>
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-10-11T18:38:12+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-11T18:38:12+08:00">
                 2019-10-11
               </time>
             
@@ -531,22 +455,15 @@ GridView 网格布局</code></pre>
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/10/11/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -615,6 +532,8 @@ GridView 网格布局</code></pre>
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/WechatIMG68.jpeg" alt="Liu Yingxu">
+            
               <p class="site-author-name" itemprop="name">Liu Yingxu</p>
               <p class="site-description motion-element" itemprop="description">JavaScript,Vue,React,NodeJs,微信小程序,Go</p>
           </div>
@@ -627,7 +546,7 @@ GridView 网格布局</code></pre>
                 <a href="/archives/">
               
                   <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -677,7 +596,7 @@ GridView 网格布局</code></pre>
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -685,7 +604,7 @@ GridView 网格布局</code></pre>
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -784,6 +703,13 @@ GridView 网格布局</code></pre>
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
