@@ -68,29 +68,31 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Hybrid,跨平台,">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="一米八三" type="application/atom+xml">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="Flutter 18年2月份提出概念，  6月份上线正式使用   12月5日正式发布1.0版本   Flutter中文网参考">
-<meta name="keywords" content="JavaScript,Vue,React,NodeJs,微信小程序,Go">
+<meta name="description" content="18年2月份提出概念，  6月份上线正式使用   12月5日正式发布1.0版本   Flutter中文网参考">
+<meta name="keywords" content="Hybrid,跨平台">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flutter相关简介及环境配置">
 <meta property="og:url" content="http://yoursite.com/2019/10/11/Flutter相关简介及环境配置/index.html">
 <meta property="og:site_name" content="一米八三">
-<meta property="og:description" content="Flutter 18年2月份提出概念，  6月份上线正式使用   12月5日正式发布1.0版本   Flutter中文网参考">
+<meta property="og:description" content="18年2月份提出概念，  6月份上线正式使用   12月5日正式发布1.0版本   Flutter中文网参考">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-12T02:51:12.369Z">
+<meta property="og:updated_time" content="2019-10-15T08:28:46.690Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter相关简介及环境配置">
-<meta name="twitter:description" content="Flutter 18年2月份提出概念，  6月份上线正式使用   12月5日正式发布1.0版本   Flutter中文网参考">
+<meta name="twitter:description" content="18年2月份提出概念，  6月份上线正式使用   12月5日正式发布1.0版本   Flutter中文网参考">
 
 
 
@@ -222,9 +224,41 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -242,242 +276,6 @@
   <div id="posts" class="posts-expand">
     
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/11/Flutter相关简介及环境配置/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Liu Yingxu">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/WechatIMG68.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="一米八三">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">Flutter相关简介及环境配置</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-11T19:57:45+08:00">
-                2019-10-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h2 id="Flutter"><a href="#Flutter" class="headerlink" title="Flutter"></a>Flutter</h2><ul>
-<li><p>18年2月份提出概念，</p>
-</li>
-<li><p>6月份上线正式使用 </p>
-</li>
-<li><p>12月5日正式发布1.0版本</p>
-<p>  <a href="https://book.flutterchina.club/" target="_blank" rel="noopener">Flutter中文网参考</a></p>
-</li>
-</ul>
-<a id="more"></a>
-
-<h3 id="相关技术简介"><a href="#相关技术简介" class="headerlink" title="相关技术简介"></a>相关技术简介</h3><p><strong>原生开发简介</strong></p>
-<pre><code>iOS：Objective-C或Swift语言调用iOS SDK
-Android:Java或Kotlin语言直接调用Android SDK
-
-优势：可访问平台全部功能（GPS、摄像头）；
-    速度快、性能高、可以实现复杂动画及绘制，整体用户体验好；
-
-缺点：平台特定，开发成本高；不同平台必须维护不同代码，人力成本随之变大；
-    内容固定，动态化弱，大多数情况下，有新功能更新时只能发版；
-
-纯原生开发的问题：
-    动态化内容需求增大
-    业务需求变化快，开发成本变大</code></pre><p><strong>跨平台技术简介</strong></p>
-<pre><code>1、H5+原生（Cordova、Ionic、微信小程序）webview
-    通过原生的网页加载控件WebView (Android)或WKWebView（ios）来加载
-    我们称这种h5+原生的开发模式为混合开发 ，采用混合模式开发的APP我们称之为混合应用或Hybird APP ，
-    如果一个应用的大多数功能都是H5实现的话，我们称其为Web APP 。
-    WebView是JavaScript与原生API之间通信的桥梁，
-    传输协议的工具称之为WebView JavaScript Bridge, 简称 JsBridge（核心）
-
-2、JavaScript开发+原生渲染 （React Native、Weex、快应用）
-    采用Web开发技术栈，社区庞大、上手快、开发成本相对较低。
-    原生渲染，性能相比H5提高很多。
-    动态化较好，支持热更新。
-
-3、自绘UI+原生(QT for mobile、Flutter)
-    通过在不同平台实现一个统一接口的渲染引擎来绘制UI，而不依赖系统原生控件
-    所以可以做到不同平台UI的一致性，注意，自绘引擎解决的是UI的跨平台问题，
-    如果涉及其它系统能力调用，依然要涉及原生开发（调取摄像头等系统设备）
-
-具体跨平台技术介绍
-    Ionic：angelur常用的组件库（官网：ionicframework.com）
-    快应用：中国的Android手机厂商联合推出的类似于rn的技术
-    Weex：阿里的kpi项目（不维护了）vue开发
-    微信小程序：在webview中渲染的，并非原生渲染，但将来有可能原生渲染</code></pre><h3 id="flutter简介"><a href="#flutter简介" class="headerlink" title="flutter简介"></a>flutter简介</h3><p><strong>跨平台自绘引擎</strong></p>
-<pre><code>跨平台自会引擎，flutter与用于构建移动应用程序的大多数框架不同，因为flutter即不使用WebView，
-也不使用操作系统的原生控件，相反，flutter使用自己的高性能渲染引擎来绘制widget</code></pre><p><strong>高性能(JIT和AOT)</strong></p>
-<pre><code>AOT（Ahead of time）:静态编译的程序在执行前全部被翻译为机器码(提前编译)
-JIT（Just-in-time）:解释执行的则是一句一句边翻译边运行(即时编译)</code></pre><p><strong>为什么采用Dart开发</strong></p>
-<pre><code>1、开发效率高
-2、高性能
-3、快速内存分配
-4、类型安全
-5、Dart团队就在隔壁</code></pre><h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>一、安装开发环境</p>
-<p>1、安装Flutter SDK（Mac）<br><a href="https://flutter.io/docs/development/tools/sdk/archive" target="_blank" rel="noopener">https://flutter.io/docs/development/tools/sdk/archive</a></p>
-<ul>
-<li>下载解压，压缩包放到应用程序里</li>
-<li>配置环境变量： ~/.bash_profile<br>添加：export PATH=$PATH:/Applications/flutter/bin</li>
-<li>执行 source ~/.bash_profile</li>
-<li>flutter –help</li>
-</ul>
-<p>2、配置iOS开发环境（Mac）</p>
-<ul>
-<li>安装xcode</li>
-<li>启动模拟器</li>
-<li>配置VS Code<br>安装 flutter扩展</li>
-</ul>
-<p>3、检测问题</p>
-<blockquote>
-<p>flutter doctor<br>问题1：Android license status unknown</p>
-</blockquote>
-<p>找到 sdk/tools/bin 下的sdkmanager.bat    %DEFAULT_JVM_OPTS%  后面添加 -XX:+IgnoreUnrecognizedVMOptions –add-modules java.se.ee</p>
-<p>flutter doctor –android-licenses<br>提示问题后升级：/usr/local/Cellar/android-sdk/tools/bin/sdkmanager –update<br>问题2：<br>? libimobiledevice and ideviceinstaller are not installed. To install with Brew, run:<br>brew update<br>brew install –HEAD usbmuxd<br>brew link usbmuxd<br>brew install –HEAD libimobiledevice<br>brew install ideviceinstaller<br>? ios-deploy not installed. To install with Brew:<br>brew install ios-deploy<br>? CocoaPods not installed.<br>CocoaPods is used to retrieve the iOS platform side’s plugin code that responds to your plugin usage on the Dart side.<br>Without resolving iOS dependencies with CocoaPods, plugins will not work on iOS.<br>For more info, see <a href="https://flutter.io/platform-plugins" target="_blank" rel="noopener">https://flutter.io/platform-plugins</a><br>To install:<br>brew install cocoapods<br>pod setup<br>问题3：<br>Android Studio (version 3.0)<br>? Flutter plugin not installed; this adds Flutter specific functionality.<br>? Dart plugin not installed; this adds Dart specific functionality.<br>打开android studio, configure &gt; plugins &gt; 搜索安装 dart, flutter</p>
-<p>二、创建项目<br>1、Using Flutter in China<br>export PUB_HOSTED_URL=<a href="https://pub.flutter-io.cn" target="_blank" rel="noopener">https://pub.flutter-io.cn</a> export FLUTTER_STORAGE_BASE_URL=<a href="https://storage.flutter-io.cn" target="_blank" rel="noopener">https://storage.flutter-io.cn</a><br>执行 source ~/.bash_profile<br>2、创建<br>flutter create gp7_flutter<br>3、运行flutter项目</p>
-<ul>
-<li>xcode里打开模拟器</li>
-<li>android studio 配置AVD</li>
-<li>flutter emulators</li>
-<li>flutter emulators –launch Nexus_6P_API_28</li>
-<li>flutter run</li>
-</ul>
-<p>三、快速入门<br>1、hello world<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(<br>Center(<br>child: Text(<br>‘hello world’,<br>textDirection: TextDirection.ltr<br>),<br>)<br>);<br>}</p>
-<p>2、自定义部件(widget)<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return Center(<br>child: Text(<br>‘hello world’,<br>textDirection: TextDirection.ltr<br>),<br>);<br>}<br>}</p>
-<p>3、文字样式<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return Center(<br>child: Text(<br>‘hello world’,<br>textDirection: TextDirection.ltr,<br>style: TextStyle(<br>fontSize: 40.0,<br>fontWeight: FontWeight.bold,<br>color: Colors.yellow<br>),<br>),<br>);<br>}<br>}</p>
-<p>4、MaterialApp界面组件<br>import ‘package:flutter/material.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return MaterialApp(<br>home: Scaffold(<br>appBar: AppBar(<br>title: Text(‘Felixlu’),<br>elevation: 0.0,<br>),<br>body: Hello()<br>),<br>theme: ThemeData(<br>primarySwatch: Colors.yellow<br>),<br>);<br>}<br>}<br>class Hello extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return Center(<br>child: Text(<br>‘hello’,<br>textDirection: TextDirection.ltr,<br>style: TextStyle(<br>fontSize: 40.0,<br>fontWeight: FontWeight.bold,<br>color: Colors.black87<br>),<br>),<br>);<br>}<br>}</p>
-<p>5、菜谱数据（model/list.dart）<br>class Cookbook {<br>const Cookbook({<br>this.name,<br>this.img,<br>this.all_click,<br>this.favorites<br>});</p>
-<p>final String name;<br>final String img;<br>final String all_click;<br>final String favorites;<br>}</p>
-<p>final List<cookbook> lists = [<br>Cookbook(<br>name: “\u5c0f\u7092\u725b\u8089”,<br>img: “http://s1.cdn.jiaonizuocai.com/videoImg/201510/1313/561c9a314c8bb.jpg/OTAweDYwMA”,<br>all_click: “961.2\u4e07”,<br>favorites: “6.0\u4e07”<br>),<br>……<br>];</cookbook></p>
-<p>6、列表视图<br>import ‘package:flutter/material.dart’;<br>import ‘model/cookbook.dart’;</p>
-<p>void main() {<br>runApp(App());<br>}</p>
-<p>class App extends StatelessWidget {<br>@override<br>Widget build(BuildContext context) {<br>return MaterialApp(<br>home: Home(),<br>theme: ThemeData(<br>primarySwatch: Colors.yellow<br>),<br>);<br>}<br>}</p>
-<p>class Home extends StatelessWidget {<br>Widget _listItemBuilder(BuildContext context, int index) {<br>return Text(lists[index].name);<br>}</p>
-<p>@override<br>Widget build(BuildContext context) {<br>return Scaffold(<br>appBar: AppBar(<br>title: Text(‘美食大全’),<br>elevation: 0.0,<br>),<br>body: ListView.builder(<br>itemCount: lists.length,<br>itemBuilder: _listItemBuilder<br>)<br>);<br>}<br>}</p>
-<p>7、列表项目<br>Widget _listItemBuilder(BuildContext context, int index) {<br>return Container(<br>color: Colors.white,<br>margin: EdgeInsets.all(8.0),<br>child: Column(<br>children: <widget>[<br>Image.network(lists[index].img),<br>SizedBox(height: 16.0),<br>Text(<br>lists[index].name,<br>style: Theme.of(context).textTheme.title<br>),<br>Text(<br>‘访问：’ + lists[index].all_click,<br>style: Theme.of(context).textTheme.subhead<br>),<br>Text(<br>‘收藏：’ + lists[index].favorites,<br>style: Theme.of(context).textTheme.subhead<br>),<br>SizedBox(height: 16.0)<br>],<br>),<br>);<br>}</widget></p>
-<p>参考：<br><a href="https://flutter.io/docs" target="_blank" rel="noopener">https://flutter.io/docs</a><br><a href="https://book.flutterchina.club/chapter1/install_flutter.html" target="_blank" rel="noopener">https://book.flutterchina.club/chapter1/install_flutter.html</a></p>
-<p><strong>Dart</strong><br>    两个编译模式 解释执行（JIT）、编译执行（AOT）<br>    final 定义的变量是不能更改的 （final String name）</p>
-<p><strong>图标</strong></p>
-<pre><code>Icon()
-
-Stack()
-
-PageView 可以做类似于swiper的布局
-
-GridView 网格布局</code></pre>
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/10/11/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
 
 
     <div class="post-spread">
@@ -492,6 +290,9 @@ GridView 网格布局</code></pre>
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -542,18 +343,43 @@ GridView 网格布局</code></pre>
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -579,7 +405,7 @@ GridView 网格布局</code></pre>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Flutter"><span class="nav-number">1.</span> <span class="nav-text">Flutter</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#相关技术简介"><span class="nav-number">1.1.</span> <span class="nav-text">相关技术简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flutter简介"><span class="nav-number">1.2.</span> <span class="nav-text">flutter简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境搭建"><span class="nav-number">1.3.</span> <span class="nav-text">环境搭建</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#相关技术简介"><span class="nav-number">1.</span> <span class="nav-text">相关技术简介</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原生开发简介"><span class="nav-number">1.1.</span> <span class="nav-text">原生开发简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#跨平台技术简介"><span class="nav-number">1.2.</span> <span class="nav-text">跨平台技术简介</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flutter简介"><span class="nav-number">2.</span> <span class="nav-text">flutter简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#环境搭建"><span class="nav-number">3.</span> <span class="nav-text">环境搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装开发环境"><span class="nav-number">3.1.</span> <span class="nav-text">安装开发环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建项目"><span class="nav-number">3.2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#快速入门"><span class="nav-number">3.3.</span> <span class="nav-text">快速入门</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#未完待续。。。"><span class="nav-number">4.</span> <span class="nav-text">未完待续。。。</span></a></li></ol></div>
             
 
           </div>
@@ -609,16 +435,21 @@ GridView 网格布局</code></pre>
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-  <span class="post-meta-divider">|</span>
 
 
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
-
+<div>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style="display:none">
+    本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
+    <span class="post-meta-divider">|</span>
+</span>
+<span id="busuanzi_container_site_uv" style="display:none">
+    有<span id="busuanzi_value_site_uv"></span>人看过我的博客啦
+</span>
+</div>
 
 
 
@@ -768,9 +599,348 @@ GridView 网格布局</code></pre>
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'JUq6AWcdk6mYS5jg9orMIYQA-gzGzoHsz',
+        appKey: 'pb866rD1TuchDKIUaQxaoXSX',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
 
 
   
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
 
 
 
