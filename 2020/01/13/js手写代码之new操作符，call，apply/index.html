@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="手写代码,">
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="JavaScript,Vue,React,NodeJs,微信小程序">
-<meta name="keywords" content="JavaScript,Vue,React,NodeJs,微信小程序">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="&amp;#x624B;&amp;#x52A8;&amp;#x5B9E;&amp;#x73B0;&amp;#x4E00;&amp;#x4E2A;new&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x9996;&amp;#x5148;&amp;#x5148;&amp;#x4E86;&amp;#x89E3;new&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x505A;&amp;#x4E86;&amp;#x54EA;&amp;#x4E9B;&amp;#x4E8B;&amp;#xFF0C;&amp;#x5B9E;&amp;#">
+<meta name="keywords" content="手写代码">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js手写代码之new操作符、call、apply">
+<meta property="og:url" content="http://yoursite.com/2020/01/13/js手写代码之new操作符，call，apply/index.html">
 <meta property="og:site_name" content="undefined">
-<meta property="og:description" content="JavaScript,Vue,React,NodeJs,微信小程序">
+<meta property="og:description" content="&amp;#x624B;&amp;#x52A8;&amp;#x5B9E;&amp;#x73B0;&amp;#x4E00;&amp;#x4E2A;new&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x9996;&amp;#x5148;&amp;#x5148;&amp;#x4E86;&amp;#x89E3;new&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x505A;&amp;#x4E86;&amp;#x54EA;&amp;#x4E9B;&amp;#x4E8B;&amp;#xFF0C;&amp;#x5B9E;&amp;#">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-18T07:23:50.025Z">
+<meta property="og:updated_time" content="2020-01-14T06:41:44.066Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="JavaScript,Vue,React,NodeJs,微信小程序">
+<meta name="twitter:title" content="js手写代码之new操作符、call、apply">
+<meta name="twitter:description" content="&amp;#x624B;&amp;#x52A8;&amp;#x5B9E;&amp;#x73B0;&amp;#x4E00;&amp;#x4E2A;new&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x9996;&amp;#x5148;&amp;#x5148;&amp;#x4E86;&amp;#x89E3;new&amp;#x64CD;&amp;#x4F5C;&amp;#x7B26;&amp;#x505A;&amp;#x4E86;&amp;#x54EA;&amp;#x4E9B;&amp;#x4E8B;&amp;#xFF0C;&amp;#x5B9E;&amp;#">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/2020/01/13/js手写代码之new操作符，call，apply/">
 
 
 
 
 
-  <title>标签 | undefined</title>
+  <title>js手写代码之new操作符、call、apply | undefined</title>
   
 
 
@@ -275,40 +275,219 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/01/13/js手写代码之new操作符，call，apply/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Liu Yingxu">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/WechatIMG68.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="undefined">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 8 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Docker/" style="font-size: 12px; color: #ccc">Docker</a> <a href="/tags/Kubernetes/" style="font-size: 12px; color: #ccc">Kubernetes</a> <a href="/tags/css/" style="font-size: 12px; color: #ccc">css</a> <a href="/tags/flutter/" style="font-size: 30px; color: #111">flutter</a> <a href="/tags/手写代码/" style="font-size: 12px; color: #ccc">手写代码</a> <a href="/tags/排序/" style="font-size: 12px; color: #ccc">排序</a> <a href="/tags/柯里化/" style="font-size: 12px; color: #ccc">柯里化</a> <a href="/tags/虚拟DOM/" style="font-size: 12px; color: #ccc">虚拟DOM</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">js手写代码之new操作符、call、apply</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-01-13T16:12:58+08:00">
+                2020-01-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javascript/" itemprop="url" rel="index">
+                    <span itemprop="name">javascript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2020/01/13/js手写代码之new操作符，call，apply/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2020/01/13/js手写代码之new操作符，call，apply/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span id="busuanzi_value_page_pv"></span>次阅读
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>&#x624B;&#x52A8;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;new&#x64CD;&#x4F5C;&#x7B26;&#x9996;&#x5148;&#x5148;&#x4E86;&#x89E3;new&#x64CD;&#x4F5C;&#x7B26;&#x505A;&#x4E86;&#x54EA;&#x4E9B;&#x4E8B;&#xFF0C;&#x5B9E;&#x73B0;call&#x3001;apply&#x8981;&#x5148;&#x77E5;&#x9053;&#x4ED6;&#x4EEC;&#x7684;&#x533A;&#x522B;&#x548C;&#x7528;&#x6CD5;</p>
+<a id="more"></a>
+
+<h3 id="&#x5B9E;&#x73B0;new&#x64CD;&#x4F5C;&#x7B26;"><a href="#&#x5B9E;&#x73B0;new&#x64CD;&#x4F5C;&#x7B26;" class="headerlink" title="&#x5B9E;&#x73B0;new&#x64CD;&#x4F5C;&#x7B26;"></a>&#x5B9E;&#x73B0;new&#x64CD;&#x4F5C;&#x7B26;</h3><blockquote>
+<p><a href="https://github.com/mqyqingfeng/Blog/issues/11" target="_blank" rel="noopener">&#x6765;&#x6E90;&#xFF1A;&#x300C;&#x4F60;&#x4E0D;&#x77E5;&#x9053;&#x7684;javascript&#x300D; &#x82F1;&#x6587;&#x7248;</a></p>
+</blockquote>
+<p><strong>new</strong>&#x64CD;&#x4F5C;&#x7B26;&#x505A;&#x4E86;&#x8FD9;&#x4E9B;&#x4E8B;</p>
+<ul>
+<li>&#x5B83;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x5168;&#x65B0;&#x7684;&#x5BF9;&#x8C61;</li>
+<li>&#x5B83;&#x4F1A;&#x88AB;&#x6267;&#x884C; <strong>Prototype</strong>&#x5BF9;&#x8C61; (&#x4E5F;&#x5C31;&#x662F;<strong><strong>proto</strong></strong>)&#x94FE;&#x63A5;</li>
+<li>&#x5B83;&#x4F7F;<strong>this</strong>&#x6307;&#x5411;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;</li>
+<li>&#x901A;&#x8FC7;<strong>new</strong>&#x521B;&#x5EFA;&#x7684;&#x6BCF;&#x4E2A;&#x5BF9;&#x8C61;&#x5C06;&#x6700;&#x7EC8;&#x88AB; <strong><strong>proto</strong></strong> &#x94FE;&#x63A5;&#x5230;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7684;Prototype&#x5BF9;&#x8C61;&#x4E0A;</li>
+<li>&#x5982;&#x679C;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;<strong>Object</strong> (&#x5305;&#x542B; <strong>Function,Array,Date,Regexg,Error</strong>),&#x90A3;&#x4E48;<strong>new</strong>&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x8C03;&#x7528;&#x5C06;&#x8FD4;&#x56DE;&#x6539;&#x5BF9;&#x8C61;&#x5F15;&#x7528;</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">New</span> (<span class="params">func</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> res = &#123;&#125;; <span class="comment">//生成新对象</span></span><br><span class="line">  <span class="keyword">if</span> (func.prototype !== <span class="literal">null</span>) &#123;</span><br><span class="line">    res.__proto__ = func.prototype <span class="comment">//实例的__proto__指向原型，构造函数的prototype也指向原型（链接到原型）</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">var</span> ret = func.apply(res, <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>, <span class="number">1</span>)) <span class="comment">// 把函数的this绑定在了新生成的对象中</span></span><br><span class="line">  <span class="keyword">if</span> ((<span class="keyword">typeof</span> ret === <span class="string">'object'</span> || <span class="keyword">typeof</span> ret === <span class="string">'function'</span>) &amp;&amp; ret !== <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> ret <span class="comment">// 如果传入的函数(构造函数)有自己的返回值，则返回该值</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> res <span class="comment">// 如果如果传入的函数(构造函数)没有自己的返回值，则返回新对象</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> obj = New(A, <span class="number">1</span>, <span class="number">2</span>);</span><br><span class="line"><span class="comment">// equals to</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> A(<span class="number">1</span>, <span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="&#x5B9E;&#x73B0;call&#x3001;apply"><a href="#&#x5B9E;&#x73B0;call&#x3001;apply" class="headerlink" title="&#x5B9E;&#x73B0;call&#x3001;apply"></a>&#x5B9E;&#x73B0;call&#x3001;apply</h3><blockquote>
+<p>&#x5B9E;&#x73B0;&#x6539;&#x7F16;&#x6765;&#x6E90;&#xFF1A; <a href="https://github.com/mqyqingfeng/Blog/issues/11" target="_blank" rel="noopener">JavaScript&#x6DF1;&#x5165;&#x4E4B;call&#x548C;apply&#x7684;&#x6A21;&#x62DF;&#x5B9E;&#x73B0; #11</a></p>
+</blockquote>
+<p><strong>call&#x8BED;&#x6CD5;</strong></p>
+<blockquote>
+<p>fun.call(thisArg, arg1, arg2, &#x2026;)&#xFF0C;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x51FD;&#x6570;, &#x5176;&#x5177;&#x6709;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x7684;this&#x503C;&#x548C;&#x5206;&#x522B;&#x5730;&#x63D0;&#x4F9B;&#x7684;&#x53C2;&#x6570;(&#x53C2;&#x6570;&#x7684;&#x5217;&#x8868;)&#x3002;</p>
+</blockquote>
+<p><strong>apply&#x8BED;&#x6CD5;</strong></p>
+<blockquote>
+<p>func.apply(thisArg, [argsArray])&#xFF0C;&#x8C03;&#x7528;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x4EE5;&#x53CA;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF08;&#x6216;&#x7C7B;&#x4F3C;&#x6570;&#x7EC4;&#x5BF9;&#x8C61;&#xFF09;&#x63D0;&#x4F9B;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+</blockquote>
+<h4 id="call-&#x5B9E;&#x73B0;"><a href="#call-&#x5B9E;&#x73B0;" class="headerlink" title="call &#x5B9E;&#x73B0;"></a>call &#x5B9E;&#x73B0;</h4><p>call&#xFF1A;&#x6838;&#x5FC3;&#xFF1A;</p>
+<ul>
+<li>&#x5C06;&#x51FD;&#x6570;&#x8BBE;&#x8BA1;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;</li>
+<li>&#x6267;&#x884C;&#x5E76;&#x4E14;&#x5220;&#x9664;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;</li>
+<li>&#x6307;&#x5B9A;<strong>this</strong>&#x5230;&#x51FD;&#x6570;&#x5E76;&#x4F20;&#x5165;&#x7ED9;&#x7684;&#x53C2;&#x6570;&#x5230;&#x6267;&#x884C;&#x51FD;&#x6570;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x7A7F;&#x5165;&#x53C2;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x6307;&#x5411;&#x4E3A;window</li>
+</ul>
+<pre><code class="javascript"></code></pre>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/手写代码/" rel="tag"># 手写代码</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/01/10/forEach-some-every-filter-find-map-reduce/" rel="next" title="forEach,some,every,filter,find,map,reduce">
+                <i class="fa fa-chevron-left"></i> forEach,some,every,filter,find,map,reduce
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/10/详解函数的柯里化/" rel="prev" title="详解函数的柯里化">
+                详解函数的柯里化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -317,6 +496,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -337,8 +523,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -407,6 +602,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现new操作符"><span class="nav-number">1.</span> <span class="nav-text">实现new操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现call、apply"><span class="nav-number">2.</span> <span class="nav-text">实现call、apply</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#call-实现"><span class="nav-number">2.1.</span> <span class="nav-text">call 实现</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
