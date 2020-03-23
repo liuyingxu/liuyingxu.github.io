@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="undefined">
 <meta property="og:description" content="&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A;&amp;#x7528;&amp;#x672C;&amp;#x5730;&amp;#x7279;&amp;#x5B9A;&amp;#x7684;&amp;#x987A;&amp;#x5E8F;&amp;#x6765;&amp;#x6BD4;&amp;#x8F83;&amp;#x4E24;&amp;#x4E2A;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x3002; &amp;#x8BED;&amp;#x6CD5;&amp;#xFF1A;stringObject.lo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-13T02:05:15.994Z">
+<meta property="og:updated_time" content="2020-03-16T08:50:36.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="localcompare实现中文按照拼音排序">
 <meta name="twitter:description" content="&amp;#x5B9A;&amp;#x4E49;&amp;#xFF1A;&amp;#x7528;&amp;#x672C;&amp;#x5730;&amp;#x7279;&amp;#x5B9A;&amp;#x7684;&amp;#x987A;&amp;#x5E8F;&amp;#x6765;&amp;#x6BD4;&amp;#x8F83;&amp;#x4E24;&amp;#x4E2A;&amp;#x5B57;&amp;#x7B26;&amp;#x4E32;&amp;#x3002; &amp;#x8BED;&amp;#x6CD5;&amp;#xFF1A;stringObject.lo">
@@ -391,9 +391,7 @@
       
 
       
-        <p>&#x5B9A;&#x4E49;&#xFF1A;&#x7528;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x8BED;&#x6CD5;&#xFF1A;stringObject.localeCompare(target)<br>&#x53C2;&#x6570;&#xFF1A;target&#x2014;&#x2014;&#x8981;&#x4EE5;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x4E0E; stringObject &#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;<br>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x8BF4;&#x660E;&#x6BD4;&#x8F83;&#x7ED3;&#x679C;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
-<a id="more"></a>
-<p>&#x3000;&#xFF08;1&#xFF09;&#x5982;&#x679C; stringObject &#x5C0F;&#x4E8E; target&#xFF0C;&#x5219; localeCompare() &#x8FD4;&#x56DE;&#x5C0F;&#x4E8E; 0 &#x7684;&#x6570;&#x3002;<br>&#x3000;&#xFF08;2&#xFF09;&#x5982;&#x679C; stringObject &#x5927;&#x4E8E; target&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x5927;&#x4E8E; 0 &#x7684;&#x6570;&#x3002;<br>&#x3000;&#xFF08;3&#xFF09;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x7B49;&#xFF0C;&#x6216;&#x6839;&#x636E;&#x672C;&#x5730;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x6CA1;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE; 0&#x3002;<br>&#x3000;&#x8BF4;&#x660E;&#xFF1A;&#x628A; &lt; &#x548C; &gt; &#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x7528;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x7528;&#x5B57;&#x7B26;&#x7684; Unicode &#x7F16;&#x7801;&#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x5F53;&#x5730;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x7684;&#x987A;&#x5E8F;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6B63;&#x786E;&#x7684;&#x3002;localeCompare() &#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x7684;&#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8003;&#x8651;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x672C;&#x5730;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;ECMAscript &#x6807;&#x51C6;&#x5E76;&#x6CA1;&#x6709;&#x89C4;&#x5B9A;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x53EA;&#x89C4;&#x5B9A;&#x8BE5;&#x51FD;&#x6570;&#x91C7;&#x7528;&#x5E95;&#x5C42;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;</p>
+        <p>&#x5B9A;&#x4E49;&#xFF1A;&#x7528;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002; &#x8BED;&#x6CD5;&#xFF1A;stringObject.localeCompare(target)<br>&#x53C2;&#x6570;&#xFF1A;target&#x2014;&#x2014;&#x8981;&#x4EE5;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x4E0E; stringObject &#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;<br>&#x8FD4;&#x56DE;&#x503C;&#xFF1A;&#x8BF4;&#x660E;&#x6BD4;&#x8F83;&#x7ED3;&#x679C;&#x7684;&#x6570;&#x5B57;&#x3002;<br>&#x3000;&#xFF08;1&#xFF09;&#x5982;&#x679C; stringObject &#x5C0F;&#x4E8E; target&#xFF0C;&#x5219; localeCompare() &#x8FD4;&#x56DE;&#x5C0F;&#x4E8E; 0 &#x7684;&#x6570;&#x3002;<br>&#x3000;&#xFF08;2&#xFF09;&#x5982;&#x679C; stringObject &#x5927;&#x4E8E; target&#xFF0C;&#x5219;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x5927;&#x4E8E; 0 &#x7684;&#x6570;&#x3002;<br>&#x3000;&#xFF08;3&#xFF09;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x7B49;&#xFF0C;&#x6216;&#x6839;&#x636E;&#x672C;&#x5730;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x6CA1;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE; 0&#x3002;<br>&#x3000;&#x8BF4;&#x660E;&#xFF1A;&#x628A; &lt; &#x548C; &gt; &#x8FD0;&#x7B97;&#x7B26;&#x5E94;&#x7528;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x65F6;&#xFF0C;&#x5B83;&#x4EEC;&#x53EA;&#x7528;&#x5B57;&#x7B26;&#x7684; Unicode &#x7F16;&#x7801;&#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x5F53;&#x5730;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x7684;&#x987A;&#x5E8F;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6B63;&#x786E;&#x7684;&#x3002;localeCompare() &#x65B9;&#x6CD5;&#x63D0;&#x4F9B;&#x7684;&#x6BD4;&#x8F83;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x8003;&#x8651;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x672C;&#x5730;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;ECMAscript &#x6807;&#x51C6;&#x5E76;&#x6CA1;&#x6709;&#x89C4;&#x5B9A;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x6BD4;&#x8F83;&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x53EA;&#x89C4;&#x5B9A;&#x8BE5;&#x51FD;&#x6570;&#x91C7;&#x7528;&#x5E95;&#x5C42;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x6392;&#x5E8F;&#x89C4;&#x5219;&#x3002;</p>
 <h2 id="&#x5B9E;&#x4F8B;"><a href="#&#x5B9E;&#x4F8B;" class="headerlink" title="&#x5B9E;&#x4F8B;"></a>&#x5B9E;&#x4F8B;</h2><h3 id="1-&#x53EF;&#x4EE5;&#x4F7F;&#x7528;localeCompare-&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x4E2D;&#x6587;&#x6309;&#x7167;&#x62FC;&#x97F3;&#x6392;&#x5E8F;&#xFF0C;&#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x7B80;&#x5355;"><a href="#1-&#x53EF;&#x4EE5;&#x4F7F;&#x7528;localeCompare-&#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x4E2D;&#x6587;&#x6309;&#x7167;&#x62FC;&#x97F3;&#x6392;&#x5E8F;&#xFF0C;&#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x7B80;&#x5355;" class="headerlink" title="1:&#x53EF;&#x4EE5;&#x4F7F;&#x7528;localeCompare() &#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x4E2D;&#x6587;&#x6309;&#x7167;&#x62FC;&#x97F3;&#x6392;&#x5E8F;&#xFF0C;&#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x7B80;&#x5355;"></a>1:&#x53EF;&#x4EE5;&#x4F7F;&#x7528;localeCompare() &#x65B9;&#x6CD5;&#x6765;&#x5B9E;&#x73B0;&#x4E2D;&#x6587;&#x6309;&#x7167;&#x62FC;&#x97F3;&#x6392;&#x5E8F;&#xFF0C;&#x65B9;&#x6CD5;&#x76F8;&#x5F53;&#x7B80;&#x5355;</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> array = [<span class="string">'白鸽'</span>, <span class="string">'麻雀'</span>, <span class="string">'大象'</span>, <span class="string">'狗'</span>, <span class="string">'猫'</span>, <span class="string">"鸡"</span>];</span><br><span class="line">array = array.sort(<span class="function"><span class="keyword">function</span> <span class="title">compareFunction</span>(<span class="params">item1, item2</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> item1.localeCompare(item2);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//["白鸽", "大象", "狗", "鸡", "麻雀", "猫"]</span></span><br></pre></td></tr></table></figure>
 
 <p>&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x4E2D;&#x6587;&#x6309;&#x7167;&#x62FC;&#x97F3;&#x6392;&#x5E8F;&#xFF0C;&#x5E76;&#x4E14;&#x53EF;&#x4EE5;&#x5C06;&#x4E2D;&#x6587;&#x6309;&#x7167;a,b,c,d&#x2026;&#x2026;&#x8FDB;&#x884C;&#x533A;&#x5206;&#x3002;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -529,7 +527,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -540,7 +538,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -551,7 +549,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

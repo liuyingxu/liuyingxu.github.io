@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="undefined">
 <meta property="og:description" content="&amp;#x767E;&amp;#x5EA6;&amp;#x767E;&amp;#x79D1;&amp;#x7684;&amp;#x91CA;&amp;#x4E49;&amp;#xFF1A; &amp;#x5728;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x79D1;&amp;#x5B66;&amp;#x4E2D;&amp;#xFF0C;&amp;#x67EF;&amp;#x91CC;&amp;#x5316;(Currying)&amp;#x662F;&amp;#x628A;&amp;#x63A5;&amp;#x53D7;&amp;#x59">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-12T07:00:29.924Z">
+<meta property="og:updated_time" content="2020-03-16T08:51:23.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="详解函数的柯里化">
 <meta name="twitter:description" content="&amp;#x767E;&amp;#x5EA6;&amp;#x767E;&amp;#x79D1;&amp;#x7684;&amp;#x91CA;&amp;#x4E49;&amp;#xFF1A; &amp;#x5728;&amp;#x8BA1;&amp;#x7B97;&amp;#x673A;&amp;#x79D1;&amp;#x5B66;&amp;#x4E2D;&amp;#xFF0C;&amp;#x67EF;&amp;#x91CC;&amp;#x5316;(Currying)&amp;#x662F;&amp;#x628A;&amp;#x63A5;&amp;#x53D7;&amp;#x59">
@@ -392,8 +392,6 @@
 
       
         <p>&#x767E;&#x5EA6;&#x767E;&#x79D1;&#x7684;&#x91CA;&#x4E49;&#xFF1A; &#x5728;&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x4E2D;&#xFF0C;&#x67EF;&#x91CC;&#x5316;(Currying)&#x662F;&#x628A;&#x63A5;&#x53D7;&#x591A;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x53D8;&#x6362;&#x6210;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x53C2;&#x6570;(&#x6700;&#x521D;&#x51FD;&#x6570;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;)&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x63A5;&#x53D7;&#x4F59;&#x4E0B;&#x7684;&#x53C2;&#x6570;&#x4E14;&#x8FD4;&#x56DE;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x7684;&#x65B0;&#x51FD;&#x6570;&#x7684;&#x6280;&#x672F;&#x3002;&#x8FD9;&#x4E2A;&#x6280;&#x672F;&#x7531; Christopher Strachey &#x4EE5;&#x903B;&#x8F91;&#x5B66;&#x5BB6; Haskell Curry &#x547D;&#x540D;&#x7684;&#xFF0C;&#x5C3D;&#x7BA1;&#x5B83;&#x662F; Moses Schnfinkel &#x548C; Gottlob Frege &#x53D1;&#x660E;&#x7684;&#x3002;</p>
-<a id="more"></a>
-
 <h3 id="&#x4F8B;&#x5B50;"><a href="#&#x4F8B;&#x5B50;" class="headerlink" title="&#x4F8B;&#x5B50;"></a>&#x4F8B;&#x5B50;</h3><p>&#x770B;&#x8FD9;&#x4E2A;&#x89E3;&#x91CA;&#x6709;&#x70B9;&#x62BD;&#x8C61;&#xFF0C;&#x5176;&#x5B9E;&#x5F52;&#x6839;&#x4E3A;&#x4E00;&#x53E5;&#x8BDD;&#x5C31;&#x662F;&#xFF1A;&#x53EA;&#x4F20;&#x9012;&#x7ED9;&#x51FD;&#x6570;&#x4E00;&#x90E8;&#x5206;&#x53C2;&#x6570;&#x6765;&#x8C03;&#x7528;&#x5B83;&#xFF0C;&#x8BA9;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x53BB;&#x5904;&#x7406;&#x5269;&#x4E0B;&#x7684;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x67EF;&#x91CC;&#x5316;&#xFF08;Currying&#xFF09;&#x51FD;&#x6570;&#x3002;<br>&#x6765;&#x770B;&#x4E2A;&#x901A;&#x4FD7;&#x7684;&#x4F8B;&#x5B50;&#xFF08;add&#x51FD;&#x6570;&#xFF09;</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 普通的add函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x, y, z</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y + z</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 柯里化（Currying）之后</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">curryingAdd</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">y</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span> (<span class="params">z</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> x + y + z</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 下面的运算方式是等价的</span></span><br><span class="line">add(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)         <span class="comment">// 6</span></span><br><span class="line">curryingAdd(<span class="number">1</span>)(<span class="number">2</span>)(<span class="number">3</span>) <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
 
@@ -472,6 +470,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/03/20/golang学习笔记/" rel="prev" title="golang学习笔记">
+                golang学习笔记 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -553,7 +555,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -564,7 +566,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -575,7 +577,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

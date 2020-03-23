@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="undefined">
 <meta property="og:description" content="&amp;#x4E4B;&amp;#x524D;&amp;#x5BF9;&amp;#x6570;&amp;#x7EC4;&amp;#x7684;&amp;#x5FAA;&amp;#x73AF;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x62FF;&amp;#x5230;&amp;#x4EE3;&amp;#x7801;&amp;#x5C31;&amp;#x4F7F;&amp;#x7528;for&amp;#x5FAA;&amp;#x73AF;&amp;#xFF0C;&amp;#x4E3B;&amp;#x8981;&amp;#x539F;&amp;#x56">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-13T02:36:41.895Z">
+<meta property="og:updated_time" content="2020-03-16T08:50:21.415Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="some every filter find map reduce">
 <meta name="twitter:description" content="&amp;#x4E4B;&amp;#x524D;&amp;#x5BF9;&amp;#x6570;&amp;#x7EC4;&amp;#x7684;&amp;#x5FAA;&amp;#x73AF;&amp;#x6765;&amp;#x8BF4;&amp;#xFF0C;&amp;#x62FF;&amp;#x5230;&amp;#x4EE3;&amp;#x7801;&amp;#x5C31;&amp;#x4F7F;&amp;#x7528;for&amp;#x5FAA;&amp;#x73AF;&amp;#xFF0C;&amp;#x4E3B;&amp;#x8981;&amp;#x539F;&amp;#x56">
@@ -392,8 +392,6 @@
 
       
         <p>&#x4E4B;&#x524D;&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x5FAA;&#x73AF;&#x6765;&#x8BF4;&#xFF0C;&#x62FF;&#x5230;&#x4EE3;&#x7801;&#x5C31;&#x4F7F;&#x7528;for&#x5FAA;&#x73AF;&#xFF0C;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x662F;&#x5BF9;&#x6570;&#x7EC4;&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x4E0D;&#x662F;&#x5F88;&#x4E86;&#x89E3;&#xFF0C;&#x4EE5;&#x53CA;&#x89C9;&#x5F97;for&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x60F3;&#x8981;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x6CA1;&#x5FC5;&#x8981;&#x5728;&#x53BB;&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x90FD;&#x662F;&#x5BF9;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E0D;&#x4E86;&#x89E3;&#x5BFC;&#x81F4;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;&#x8BA9;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x4E0D;&#x518D;&#x662F;&#x5343;&#x7BC7;&#x4E00;&#x5F8B;&#x7684;for&#x5FAA;&#x73AF;&#x3002;&#x7279;&#x5730;&#x603B;&#x7ED3;&#x4E00;&#x4E0B;&#x8FD9;&#x51E0;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x9AD8;&#x7EA7;&#x65B9;&#x6CD5;&#x3002;</p>
-<a id="more"></a>
-
 <h3 id="forEach"><a href="#forEach" class="headerlink" title="forEach"></a>forEach</h3><p>&#x76F8;&#x5F53;&#x4E8E;for&#x5FAA;&#x73AF;</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">***前：***</span><br><span class="line"><span class="keyword">var</span> items = [<span class="string">'item1'</span>, <span class="string">'item2'</span>, <span class="string">'item3'</span>];</span><br><span class="line"><span class="keyword">var</span> copy = [];</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;items.length; i++) &#123;</span><br><span class="line">  copy.push(items[i])  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">***后：***</span><br><span class="line"><span class="keyword">var</span> items = [<span class="string">'item1'</span>, <span class="string">'item2'</span>, <span class="string">'item3'</span>];</span><br><span class="line"><span class="keyword">var</span> copy = [];</span><br><span class="line"></span><br><span class="line">items.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item</span>)</span>&#123;</span><br><span class="line">  copy.push(item)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
@@ -532,7 +530,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -543,7 +541,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -554,7 +552,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
